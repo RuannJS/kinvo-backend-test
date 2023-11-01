@@ -1,8 +1,7 @@
 # Personal Finance Management App
 
-Brief project description or a catchy tagline.
-
 ## Table of Contents
+
 - [Technologies Used](#technologies-used)
 - [Project Overview](#project-overview)
 - [Getting Started](#getting-started)
