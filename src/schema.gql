@@ -1,0 +1,79 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Action {
+  id: ID!
+  description: String!
+  value: Float!
+  type: String!
+  created_at: DateTime!
+  updated_at: DateTime
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Finance {
+  id: ID!
+  actions: [Action!]!
+  user: User!
+}
+
+type Balance {
+  balance: Float!
+}
+
+type User {
+  id: ID!
+  first_name: String!
+  last_name: String!
+  email: String!
+  password: String!
+  finances: Finance
+}
+
+type Token {
+  token: String!
+}
+
+type Query {
+  findAllUsers: [User!]!
+  loginUser(data: LoginUserInput!): Token!
+  listFinance(pageNumber: Float!): [Action!]!
+  financeBalance: Balance!
+}
+
+input LoginUserInput {
+  email: String!
+  password: String!
+}
+
+type Mutation {
+  createUser(data: CreateUserInput!): User!
+  createAction(data: CreateActionInput!): Action!
+  updateAction(data: UpdateActionInput!): Action!
+  deleteAction(actionId: String!): Boolean!
+}
+
+input CreateUserInput {
+  first_name: String!
+  last_name: String!
+  email: String!
+  password: String!
+}
+
+input CreateActionInput {
+  description: String!
+  value: Float!
+  type: String!
+}
+
+input UpdateActionInput {
+  description: String
+  value: Float
+  type: String
+  actionId: String!
+}
