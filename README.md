@@ -1,73 +1,71 @@
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
-</p>
+# Personal Finance Management App
 
-[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-[circleci-url]: https://circleci.com/gh/nestjs/nest
+Brief project description or a catchy tagline.
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+## Table of Contents
+- [Technologies Used](#technologies-used)
+- [Project Overview](#project-overview)
+- [Getting Started](#getting-started)
+- [Installation](#installation)
 
-## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+## Technologies Used
 
-## Installation
+- [NestJS](https://nestjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Prisma](https://www.prisma.io/)
+- [GraphQL](https://graphql.org/)
+- [Bcrypt](https://www.npmjs.com/package/bcrypt)
+- [JWT](https://jwt.io/)
+- [MongoDB](https://www.mongodb.com/)
 
-```bash
-$ npm install
-```
+## Project Overview
 
-## Running the app
+This project aims to help a student save expenses and manage personal finances. After a case study, the following functionalities have been identified:
 
-```bash
-# development
-$ npm run start
+- Creation of financial transactions (income and expenses)
+- Updating financial transactions
+- Deletion of financial transactions
+- Listing financial transactions
+- Display of the balance
 
-# watch mode
-$ npm run start:dev
+## Requirements
 
-# production mode
-$ npm run start:prod
-```
+### Junior Developer
+- Filter for listing transactions by date (start date and end date)
+- Pagination for listing transactions
 
-## Test
+### Mid-level Developer (Pleno)
+- All the requirements of a Junior Developer
+- Semantic REST API (if you choose to develop a REST API)
+- Minimally scalable architecture
+- Minimum automated test coverage
 
-```bash
-# unit tests
-$ npm run test
+### Senior Developer
+- All the requirements of a Mid-level Developer
+- Authentication:
+  - User registration
+  - Login
+  - Users must be authenticated for the activities mentioned in the context
+- Dockerize the application
+- Good object-oriented programming practices (e.g., SOLID, Design Patterns, etc.)
 
-# e2e tests
-$ npm run test:e2e
+## Getting Started
 
-# test coverage
-$ npm run test:cov
-```
+These instructions will help you get a copy of the project up and running on your local machine.
 
-## Support
+### Installation
 
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+1. Clone the repository:
 
-## Stay in touch
+   ```bash
+   git clone https://github.com/RuannJS/kinvo-backend-test
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
 
-## License
+2. Navigate to the project directory:
 
-Nest is [MIT licensed](LICENSE).
+   cd your-project
+
+3. Install dependencies:
+
+   npm install
